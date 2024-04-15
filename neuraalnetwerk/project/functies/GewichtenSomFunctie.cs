@@ -1,7 +1,7 @@
-using Connectie;
-
 namespace Functies;
 
-public interface IInputFunctie{
+using Connectie;
+
+public class GewichtenSomFunctie : IInputFunctie{
     double BerekenInput(List<IConnectie> inputs);
 }

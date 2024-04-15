@@ -1,5 +1,5 @@
 namespace Functies;
 
-public interface IActivatieFunctie{
+public class SigmoidFunctie : IActivatieFunctie{
     double BerekenOutput(double input);
 }
