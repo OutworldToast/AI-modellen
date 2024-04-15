@@ -1,7 +1,12 @@
 namespace Functies;
 
-using Connectie;
+using System.Collections.Generic;
+using Connection;
 
-public class GewichtenSomFunctie : IInputFunctie{
-    double BerekenInput(List<IConnectie> inputs);
+public class GewichtenSomFunctie : IInputFunctie
+{
+    public double BerekenInput(List<IConnectie> inputs)
+    {
+        throw new NotImplementedException();
+    }
 }

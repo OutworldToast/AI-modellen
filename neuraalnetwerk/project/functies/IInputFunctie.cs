@@ -1,4 +1,4 @@
-using Connectie;
+using Connection;
 
 namespace Functies;
 
