@@ -1,7 +1,7 @@
-using Connectie;
+namespace Functions;
 
-namespace Functies;
+using Connection;
 
 public interface IInputFunctie{
-    double BerekenInput(List<IConnectie> inputs);
+    public double BerekenInput(List<IConnectie> inputs);
 }

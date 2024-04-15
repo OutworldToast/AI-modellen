@@ -1,7 +1,9 @@
-namespace Functies;
+namespace Functions;
 
-using Connectie;
+using Connection;
 
 public class GewichtenSomFunctie : IInputFunctie{
-    double BerekenInput(List<IConnectie> inputs);
+    public double BerekenInput(List<IConnectie> inputs) {
+        return 0.0;
+    }
 }

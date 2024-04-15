@@ -1,5 +1,5 @@
-namespace Functies;
+namespace Functions;
 
 public interface IActivatieFunctie{
-    double BerekenOutput(double input);
+    public double BerekenOutput(double input);
 }

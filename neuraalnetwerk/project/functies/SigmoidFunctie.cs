@@ -1,5 +1,7 @@
-namespace Functies;
+namespace Functions;
 
 public class SigmoidFunctie : IActivatieFunctie{
-    double BerekenOutput(double input);
+    public double BerekenOutput(double input){
+        return 0.0;
+    }
 }

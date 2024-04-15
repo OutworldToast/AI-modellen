@@ -1,10 +1,10 @@
-namespace Zenuwcel;
+namespace Neuron;
 
-using Connectie;
+using Connection;
 
 public interface IZenuwcel{
-    double BerekenOutput();
-    void voegInputZenuwcelToe(IZenuwcel zenuwcel);
-    void VoegOutputConnectieToe(IConnectie connectie);
-    void VoegInputConnectieToe(IConnectie connectie);
+    public double BerekenOutput();
+    public void voegInputZenuwcelToe(IZenuwcel zenuwcel);
+    public void VoegOutputConnectieToe(IConnectie connectie);
+    public void VoegInputConnectieToe(IConnectie connectie);
 }

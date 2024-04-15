@@ -1,6 +1,6 @@
-namespace Layer;
+namespace NeuralLayer;
 
-using Zenuwcel;
+using Neuron;
 
 public class Layer{
     
