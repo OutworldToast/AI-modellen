@@ -4,3 +4,4 @@ numpy
 matplotlib
 pyodbc
 sqlalchemy
+mlxtend
