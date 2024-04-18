@@ -5534,19 +5534,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\akram\\.nuget\\packages\\": {}
+    "C:\\Users\\accou\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akram\\OneDrive\\Documenten\\SE4 Software Engineering\\Neural Networks\\AI-modellen\\neuraalnetwerk\\tests\\tests.csproj",
+      "projectUniqueName": "C:\\Users\\accou\\Desktop\\HHS\\SE4\\DEDS\\AI modellen\\neuraalnetwerk\\tests\\tests.csproj",
       "projectName": "tests",
-      "projectPath": "C:\\Users\\akram\\OneDrive\\Documenten\\SE4 Software Engineering\\Neural Networks\\AI-modellen\\neuraalnetwerk\\tests\\tests.csproj",
-      "packagesPath": "C:\\Users\\akram\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akram\\OneDrive\\Documenten\\SE4 Software Engineering\\Neural Networks\\AI-modellen\\neuraalnetwerk\\tests\\obj\\",
+      "projectPath": "C:\\Users\\accou\\Desktop\\HHS\\SE4\\DEDS\\AI modellen\\neuraalnetwerk\\tests\\tests.csproj",
+      "packagesPath": "C:\\Users\\accou\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\accou\\Desktop\\HHS\\SE4\\DEDS\\AI modellen\\neuraalnetwerk\\tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\akram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\accou\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5560,8 +5560,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\akram\\OneDrive\\Documenten\\SE4 Software Engineering\\Neural Networks\\AI-modellen\\neuraalnetwerk\\project\\neuraalnetwerk.csproj": {
-              "projectPath": "C:\\Users\\akram\\OneDrive\\Documenten\\SE4 Software Engineering\\Neural Networks\\AI-modellen\\neuraalnetwerk\\project\\neuraalnetwerk.csproj"
+            "C:\\Users\\accou\\Desktop\\HHS\\SE4\\DEDS\\AI modellen\\neuraalnetwerk\\project\\neuraalnetwerk.csproj": {
+              "projectPath": "C:\\Users\\accou\\Desktop\\HHS\\SE4\\DEDS\\AI modellen\\neuraalnetwerk\\project\\neuraalnetwerk.csproj"
             }
           }
         }
