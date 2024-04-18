@@ -1,29 +1,49 @@
 namespace Neuron;
 
 using Connection;
+using Functions;
 
 public class Zenuwcel : IZenuwcel{
 
+    private IActivatieFunctie _activatieFunctie;
+    private IInputFunctie _inputFunctie;
     
     public Guid Id { get; }
     public double VorigeAfgeleide { get; set; }
 
-    public List<IZenuwcel> Inputs { get; set; }
-    public List<IZenuwcel> Outputs { get; set; }
+    public List<IConnectie> Inputs { get; set; }
+    public List<IConnectie> Outputs { get; set; }
+
+    public Zenuwcel(IActivatieFunctie activatieFunctie, IInputFunctie inputFunctie){
+        Id = Guid.NewGuid();
+        Inputs = new List<IConnectie>();
+        Outputs = new List<IConnectie>();
+
+        _activatieFunctie = activatieFunctie;
+        _inputFunctie = inputFunctie;
+    }
+
+
     public double BerekenOutput(){
-        return 0.0;
+        return _activatieFunctie.BerekenOutput(_inputFunctie.BerekenInput(Inputs));
     }
-    public void voegInputZenuwcelToe(IZenuwcel zenuwcel){
-
-    }
-    public void VoegOutputZenuwcelToe(IConnectie connectie){
-
-    }
-    public void VoegInputConnectieToe(IConnectie connectie){
-
+    public void VoegInputZenuwcelToe(IZenuwcel inputZenuwcel){
+        var connectie = new Connectie(inputZenuwcel, this);
+        Inputs.Add(connectie);
+        inputZenuwcel.Outputs.Add(connectie);
     }
 
-    public void PushWaardeNaarInput(double inputwaarde){
+    public void VoegOutputZenuwcelToe(IZenuwcel outputZenuwcel){
+        var connectie = new Connectie(this, outputZenuwcel);
+        Outputs.Add(connectie);
+        outputZenuwcel.Inputs.Add(connectie);
+    }
+    public void VoegInputConnectieToe(double inputWaarde){
+        var inputConnectie = new InputConnectie(this, inputWaarde);
+        Inputs.Add(inputConnectie);
+    }
 
+    public void PushWaardeNaarInput(double inputWaarde){
+        ((InputConnectie)Inputs.First()).Output = inputWaarde;
     }
 }
