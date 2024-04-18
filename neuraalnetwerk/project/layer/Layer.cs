@@ -8,7 +8,7 @@ public class Layer{
     public Layer()
     {
         Zenuwcellen = new List<IZenuwcel>();
-    }
+    } 
 
     public void ConnectLayers(Layer inputLayer)
     {
