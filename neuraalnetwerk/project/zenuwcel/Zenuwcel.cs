@@ -25,7 +25,7 @@ public class Zenuwcel : IZenuwcel{
 
 
     public double BerekenOutput(){
-        return 0.0;
+        return _activatieFunctie.BerekenOutput(_inputFunctie.BerekenInput(Inputs));
     }
     public void VoegInputZenuwcelToe(IZenuwcel inputZenuwcel){
         var connectie = new Connectie(inputZenuwcel, this);
@@ -38,11 +38,12 @@ public class Zenuwcel : IZenuwcel{
         Outputs.Add(connectie);
         outputZenuwcel.Inputs.Add(connectie);
     }
-    public void VoegInputConnectieToe(IConnectie connectie){
-
+    public void VoegInputConnectieToe(double inputWaarde){
+        var inputConnectie = new InputConnectie(this, inputWaarde);
+        Inputs.Add(inputConnectie);
     }
 
-    public void PushWaardeNaarInput(double inputwaarde){
-
+    public void PushWaardeNaarInput(double inputWaarde){
+        ((InputConnectie)Inputs.First()).Output = inputWaarde;
     }
 }

@@ -11,8 +11,8 @@ public interface IZenuwcel{
     public double BerekenOutput();
     public void VoegInputZenuwcelToe(IZenuwcel zenuwcel);
     public void VoegOutputZenuwcelToe(IZenuwcel zenuwcel);
-    public void VoegInputConnectieToe(IConnectie connectie);
+    public void VoegInputConnectieToe(double inputWaarde);
 
-    public void PushWaardeNaarInput(double inputwaarde);
+    public void PushWaardeNaarInput(double inputWaarde);
 
 }
