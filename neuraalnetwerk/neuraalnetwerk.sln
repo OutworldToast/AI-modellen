@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neuraalnetwerk", "project\neuraalnetwerk.csproj", "{4225B4FF-F49A-4ED8-8034-C879EF520379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{7416E254-C3D0-4357-B547-B1BCECCE8ABA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4225B4FF-F49A-4ED8-8034-C879EF520379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4225B4FF-F49A-4ED8-8034-C879EF520379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4225B4FF-F49A-4ED8-8034-C879EF520379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4225B4FF-F49A-4ED8-8034-C879EF520379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7416E254-C3D0-4357-B547-B1BCECCE8ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7416E254-C3D0-4357-B547-B1BCECCE8ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7416E254-C3D0-4357-B547-B1BCECCE8ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7416E254-C3D0-4357-B547-B1BCECCE8ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
